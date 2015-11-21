@@ -85,6 +85,10 @@ $app->get('/success', function () use ($app) {
 	//$app->render('pay.php', $data);
 });
 
+$app->get('/basket', function () use ($app) {
+	$app->render('basket.php');
+});
+
 $app->get('/superadmin', function () use ($app) {
 	$model = new Model();
 	$payments = $model->read('payments');
