@@ -14,13 +14,17 @@
                 <hr>
                 <h3>International gifting can be less expensive than you think.</h3>
 				<br/>
-				<div class="input-group">
-					<div class="col-lg-6">
-						<input type="text" class="form-control" placeholder="Where do you want to send?">
+            </div>
+			<div class="row">
+				<div class="col-md-2 col-md-offset-5">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Send gift to...">
 					</div>
 				</div>
-                <a href="#sell" class="btn btn-primary btn-xl page-scroll">Just Pick</a>
-            </div>
+				<br/>
+				<br/>
+				<a href="basket" class="btn btn-primary btn-xl page-scroll">Search</a>
+			</div>
         </div>
     </header>
 
@@ -46,7 +50,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-reorder wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Order</h3>
-                        <p class="text-muted">Provide delivery address.</p>
+                        <p class="text-muted">Fill up the form.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">

@@ -39,7 +39,7 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active">
-								<img class="slide-image" src="img/flower/5.jpg" alt="">
+								<img class="slide-image" src="img/pizza/11.jpg" alt="">
 							</div>
 							<div class="item">
 								<img class="slide-image" src="img/pizza/12.jpg" alt="">
@@ -62,7 +62,7 @@
 			<div class="row">
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="img/flower/1.jpg" alt="">
+						<img src="img/pizza/1.jpg" alt="">
 						<div class="caption">
 							<h4 class="pull-right">$12.99</h4>
 							<h4><a href="#">Pepperoni</a>
@@ -106,7 +106,7 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="img/flower/3.jpg" alt="">
+						<img src="img/pizza/3.jpg" alt="">
 						<div class="caption">
 							<h4 class="pull-right">$10.99</h4>
 							<h4><a href="#">Four Cheeses</a>
@@ -174,7 +174,7 @@
 				
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="img/flower/6.jpg" alt="">
+						<img src="img/pizza/6.jpg" alt="">
 						<div class="caption">
 							<h4 class="pull-right">$14.99</h4>
 							<h4><a href="#">Margarita</a>
