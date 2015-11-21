@@ -25,28 +25,27 @@
 			</tr>
 			<tr>
 				<td><b>Name:</b></td>
-				<td>John Doe</td>
+				<td><?= $data['payment']['name']; ?></td>
 			</tr>
 			<tr>
 				<td><b>Delivery address:</b></td>
 				<td>
 					<address>
-					  <strong>Windsor</strong><br>
-					  United Kingdom<br>
+						<?= $data['payment']['address']; ?>
 					</address>
 				</td>
 			</tr>
 			<tr>
 				<td><b>Phone:</b></td>
-				<td>12345678</td>
+				<td><?= $data['payment']['phone']; ?></td>
 			</tr>
 			<tr>
 				<td><b>Price:</b></td>
-				<td>$ 20.00</td>
+				<td><?= $data['payment']['price']; ?></td>
 			</tr>
 		</table>
 	</div>
 	
-	<a href="." class="btn btn-primary pull-right">Back to Home Page</a>
+	<a href="/" class="btn btn-primary pull-right">Back to Home Page</a>
 		
 </div>
