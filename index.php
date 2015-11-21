@@ -89,6 +89,22 @@ $app->get('/basket', function () use ($app) {
 	$app->render('basket.php');
 });
 
+$app->get('/pizza', function () use ($app) {
+	$app->render('pizza.php');
+});
+
+$app->get('/flower', function () use ($app) {
+	$app->render('flower.php');
+});
+
+$app->get('/cake', function () use ($app) {
+	$app->render('cake.php');
+});
+
+$app->get('/other', function () use ($app) {
+	$app->render('other.php');
+});
+
 $app->get('/superadmin', function () use ($app) {
 	$model = new Model();
 	$data = [];
