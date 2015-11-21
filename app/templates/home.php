@@ -10,9 +10,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>gifTime</h1>
+                <h2><strong><font size="20">Giftime</font></strong></h2>
                 <hr>
-                <h3>International gifting can be less expensive than you think.</h3>
+                <h3 class="header-text">International gifting can be less expensive than you think.</h3>
 				<br/>
             </div>
 			<div class="row">

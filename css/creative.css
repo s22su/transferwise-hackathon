@@ -36,8 +36,15 @@ a:focus {
     color: #00BCD4;
 }
 
-h1,
-h2,
+h1{
+	font-family: "Pacifico", Arial, Sans-serif;
+	color: #0097A7;
+}
+
+h2{
+	font-family: "Pacifico", Arial, Sans-serif;
+	color: #000;
+}
 h3,
 h4,
 h5,
