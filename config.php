@@ -15,7 +15,7 @@ if ($_SERVER['HTTP_HOST'] == 'server.deployment.com') {
 } else {
 	define('DB_TYPE', 'mysql');
 	define('DB_HOST', 'localhost');
-	define('DB_BASE', 'test');
+	define('DB_BASE', 'twhack');
 	define('DB_USER', 'root');
 	define('DB_PASSWORD', '');
 }

@@ -1,6 +1,6 @@
 {
     "name"             : "mroca/slim-boilerplate",
-    "description"      : "CHANGE THIS - PHP SLIM server with Migration, Layout, Model, DB-MySQL and RESTFULL classes",
+    "description"      : "Cool",
     "minimum-stability": "stable",
     "authors"          : [
         {

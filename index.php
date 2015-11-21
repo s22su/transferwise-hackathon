@@ -1,5 +1,8 @@
 <?php
 
+use SlimBoilerplate\Dbal\DB;
+use SlimBoilerplate\Dbal\Model;
+
 //session_start();
 
 // Init Slim framework, other composer libs and PSR-0 autoloader
@@ -77,66 +80,46 @@ $app->get('/pay', function () use ($app) {
 	$app->render('pay.php', $data);
 });
 
-$app->get('/contact', function () use ($app) {
-	$data = inputGet('success') ? array('success' => inputGet('success')) : array();
-	$app->render('contact.php', $data);
+$app->get('/success', function () use ($app) {
+	die('Payment received beautyful page here!');
+	//$app->render('pay.php', $data);
 });
 
-$app->post('/contact', function () use ($app) {
-
+$app->post('/pay', function () use ($app) {
 	$error = '';
 	$message = 'Un nouveau message a été posté sur le site ' . SITE_NAME . '.<br /><br />';
 
 	$fields = array(
-		'Nom'     => 'contact_name',
-		'Société' => 'contact_company',
-		'Email'   => 'contact_email',
-		'Message' => 'contact_message',
+		'Link'               => 'link',
+		'Price'              => 'price',
+		'Delivery address'   => 'address',
+		'Name'               => 'name',
+		'Phone'              => 'phone',
 	);
 
 	foreach ($fields as $fullName => $name) {
 		if (!trim(inputPost($name))) {
-			$error .= "Le champ $fullName' est invalide.<br />";
-		}
-
-		if ($name === 'contact_email' && !valid_email(inputPost($name))) {
-			$error .= "L'adresse mail est invalide.<br />";
-		}
-
-		if ($name !== 'contact_message')
-			$message .= "$fullName : <strong>" . inputPost($name) . "</strong><br />";
-		else {
-			$message .= "<br />------------------ Message : --------------<br /><br />";
-			$message .= nl2br(strip_tags(inputPost($name))) . "<br />";
+			$error .= 'Field "'.$name.'" is required!<br>';
 		}
 	}
 
-	if (!$error) {
-		try {
-			$mailer = new SimpleMail();
-			$send = $mailer->setTo(CONTACT_EMAIL, SITE_NAME)
-				->setSubject("[" . SITE_NAME . "] Nouveau message de contact")
-				->setFrom(CONTACT_EMAIL, SITE_NAME)
-				->addMailHeader('Reply-To', inputPost('contact_email'), inputPost('contact_name'))
-				->addGenericHeader('X-Mailer', 'PHP/' . phpversion())
-				->addGenericHeader('Content-Type', 'text/html; charset="utf-8"')
-				->setMessage($message)
-				->setWrap(100)
-				->send();
-
-			if (!$send) {
-				$error = 'Erreur lors de l\'envoi du mail';
-			}
-
-		} catch (Exception $e) {
-			$error = $e->getMessage();
-		}
+	if ($error) {
+		$app->render('pay.php', array('error' => $error));
 	}
+	else {
+		$payments = new Model();
 
-	if ($error)
-		$app->render('contact.php', array('error' => $error));
-	else
-		$app->redirect(uri('contact?success=1'));
+		$values = [
+			'link' => inputPost('link'),
+			'price' => inputPost('price'),
+			'address' => inputPost('address'),
+			'name' => inputPost('name'),
+			'phone' => inputPost('phone')
+		];
+
+		$result = $payments->insert('payments', $values);
+		$app->redirect(uri('success'));
+	}
 });
 
 //Default controller for front pages
