@@ -32,6 +32,14 @@
 				</div>
 			</div>
 			<a href="basket" class="btn btn-primary pull-right">Search</a>
+			<br/>
+			<hr/>
+			<p>Item not here? Proceed to checkout page to enter link of requested item to buy.</p>
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="pay" class="btn btn-success pull-right">Checkout</a>
+				</div>
+			</div>
 		</div>
 
 		<div class="col-md-9">
