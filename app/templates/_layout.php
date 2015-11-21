@@ -2,7 +2,6 @@
 <!--[if lte IE 8]> <html class="no-js lte-ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 
 	<!--
@@ -17,68 +16,72 @@
 
 	<title><?= isset($title) && $title ? SITE_NAME . ' | ' . $title : (isset($defaultTitle) ? $defaultTitle : SITE_NAME) ?></title>
 
-	<meta name="author" content="Michel Roca" />
-
-	<meta name="description" content="<?= isset($description) && $description ? $description : (isset($defaultDescription) ? $defaultDescription : '') ?>" />
-	<meta name="keywords" content="<?= isset($keywords) ? $keywords : '' ?>" />
-
-	<link id="baseUrl" rel="canonical" href="<?= baseUrl() ?>" />
-	
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <title>gifTime</title>
+
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 
-	<!--[if lt IE 9]>
-	<script src="<?= baseUrl() ?>assets/js/vendor/html5shiv-printshiv-3.7.1.min.js"></script>
-	<script src="<?= baseUrl() ?>assets/js/vendor/respond-1.4.2.min.js"></script>
-	<![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-	<!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">gifTime</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about">About</a>
+                        <a class="page-scroll" href="#services">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a class="page-scroll" href="#sell">What We Sell</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
+
+	<?= $output ?>
 	
-	<div class="container">
-		<?= $output ?>
-	</div>
-		
-	<hr>
 	<!-- Footer -->
 	<footer>
         <div class="container">
@@ -90,11 +93,7 @@
                         </li>
                         <li class="footer-menu-divider">⋅</li>
                         <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">⋅</li>
-                        <li>
-                            <a href="#services">Services</a>
+                            <a href="#services">What We Sell</a>
                         </li>
                         <li class="footer-menu-divider">⋅</li>
                         <li>
@@ -106,6 +105,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
 </html>
