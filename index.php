@@ -81,7 +81,10 @@ $app->get('/pay', function () use ($app) {
 });
 
 $app->get('/success', function () use ($app) {
+	$model = new Model();
 	$data = [];
+	$payment = current($model->read('payments', 'id', (int)base64_decode($_GET['order'])));
+	$data['payment'] = $payment;
 	$app->render('success.php', $data);
 });
 
@@ -158,7 +161,8 @@ $app->post('/pay', function () use ($app) {
 		];
 
 		$result = $payments->insert('payments', $values);
-		$app->redirect(uri('success'));
+		//die($result);
+		$app->redirect(uri('success?order='.base64_encode($result)));
 	}
 });
 
