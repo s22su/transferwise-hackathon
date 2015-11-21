@@ -72,6 +72,11 @@ $app->get('/error', function () use ($app) {
 	$app->render('error.php');
 })->name('error');
 
+$app->get('/pay', function () use ($app) {
+	$data = inputGet('success') ? array('success' => inputGet('success')) : array();
+	$app->render('pay.php', $data);
+});
+
 $app->get('/contact', function () use ($app) {
 	$data = inputGet('success') ? array('success' => inputGet('success')) : array();
 	$app->render('contact.php', $data);
