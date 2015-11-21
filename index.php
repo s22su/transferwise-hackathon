@@ -108,7 +108,21 @@ $app->get('/other', function () use ($app) {
 	$app->render('other.php');
 });
 
+$app->get('/superlogin', function () use ($app) {
+    setcookie("superlogin", "1", time() + 3600 * 24 * 24);
+	die('logged in');
+});
+
+$app->get('/superlogout', function () use ($app) {
+	setcookie("superlogin", "", time()-3600);
+	die('logged out');
+});
+
 $app->get('/superadmin', function () use ($app) {
+	if(!isset($_COOKIE['superlogin'])) {
+		die('Not logged');
+	}
+	
 	$model = new Model();
 	$data = [];
 
