@@ -85,6 +85,14 @@ $app->get('/success', function () use ($app) {
 	//$app->render('pay.php', $data);
 });
 
+$app->get('/superadmin', function () use ($app) {
+	$model = new Model();
+	$payments = $model->read('payments');
+	$data = [];
+	$data['payments'] = $payments;
+	$app->render('pay.php', $data);
+});
+
 $app->post('/pay', function () use ($app) {
 	$error = '';
 	$message = 'Un nouveau message a été posté sur le site ' . SITE_NAME . '.<br /><br />';
