@@ -93,9 +93,11 @@ function inputPost($name)
  */
 function formValue($name)
 {
-	if (!isset($_POST[$name])) return '';
+	$ret = '';
+	if (isset($_POST[$name])) $ret = $_POST[$name];
+	if (isset($_GET[$name])) $ret = $_GET[$name];
 
-	return secur($_POST[$name]);
+	return secur($ret);
 }
 
 /**

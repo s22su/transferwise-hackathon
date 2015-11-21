@@ -70,21 +70,21 @@
 
 	<div class="input-group">
 	  <span class="input-group-addon" id="basic-addon5">Country</span>
-	  <input type="text" class="form-control" placeholder="Country" aria-describedby="basic-addon1" name="country">
+	  <input type="text" class="form-control" placeholder="Country" aria-describedby="basic-addon1" name="country" value="<?= formValue('country') ?>">
 	</div>
 	
 	<br/>
 	
 	<div class="input-group">
 	  <span class="input-group-addon" id="basic-addon5">Bank</span>
-	  <input type="text" class="form-control" placeholder="Bank" aria-describedby="basic-addon1" name="bank">
+	  <input type="text" class="form-control" placeholder="Bank" aria-describedby="basic-addon1" name="bank" value="<?= formValue('bank') ?>">
 	</div>
 	
 	<br/>
 	
 	<div class="input-group">
 	  <span class="input-group-addon" id="basic-addon5">Account Number</span>
-	  <input type="text" class="form-control" placeholder="account number" aria-describedby="basic-addon1" name="account_number">
+	  <input type="text" class="form-control" placeholder="account number" aria-describedby="basic-addon1" name="account_number" value="<?= formValue('account_number') ?>">
 	</div>
 
 	<br/>
