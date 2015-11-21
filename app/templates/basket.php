@@ -80,11 +80,11 @@
 					<div class="thumbnail">
 						<img src="img/flower/1.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$12.99</h4>
+							<h4 class="pull-right">£12.99</h4>
 							<h4><a href="#">Assorted Flowers</a>
 							</h4>
 							<p>See more snippets like this online store item at</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.flowers.com.uk/assorted-flowers')?>&price=£12.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">15 reviews</p>
@@ -103,11 +103,11 @@
 					<div class="thumbnail">
 						<img src="img/pizza/2.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$15.99</h4>
+							<h4 class="pull-right">£15.99</h4>
 							<h4><a href="#">Vegetarian</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.pizza.com.uk/vegetarian')?>&price=£15.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">12 reviews</p>
@@ -126,11 +126,11 @@
 					<div class="thumbnail">
 						<img src="img/flower/3.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$20.99</h4>
+							<h4 class="pull-right">£20.99</h4>
 							<h4><a href="#">Pure White Roses</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.flowers.com.uk/pure-white-roses')?>&price=£20.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">31 reviews</p>
@@ -151,11 +151,11 @@
 					<div class="thumbnail">
 						<img src="img/toy/4.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$45.99</h4>
+							<h4 class="pull-right">£45.99</h4>
 							<h4><a href="#">Bicycle</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.toys.com.uk/bicycle')?>&price=£45.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">6 reviews</p>
@@ -174,11 +174,11 @@
 					<div class="thumbnail">
 						<img src="img/toy/3.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$24.99</h4>
+							<h4 class="pull-right">£24.99</h4>
 							<h4><a href="#">The Hunger Games</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.books.com.uk/the-hunger-games')?>&price=£24.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">18 reviews</p>
@@ -197,11 +197,11 @@
 					<div class="thumbnail">
 						<img src="img/flower/6.jpg" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$14.99</h4>
+							<h4 class="pull-right">£14.99</h4>
 							<h4><a href="#">Pink Roses Bouquet</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="pay" class="btn btn-success btn-large">Checkout</a>
+							<a href="pay?link=<?php echo htmlspecialchars('www.flowers.com.uk/pink-roses-bouquet')?>&price=£14.99" class="btn btn-success btn-large">Checkout</a>
 						</div>
 						<div class="ratings">
 							<p class="pull-right">18 reviews</p>
