@@ -81,8 +81,8 @@ $app->get('/pay', function () use ($app) {
 });
 
 $app->get('/success', function () use ($app) {
-	die('Payment received beautyful page here!');
-	//$app->render('pay.php', $data);
+	$data = [];
+	$app->render('success.php', $data);
 });
 
 $app->get('/basket', function () use ($app) {
