@@ -5,6 +5,7 @@ ErrorDocument 404 404.html
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
     RewriteEngine on
+	RewriteBase /panda2/transferwise-hackathon/
 
 #    RewriteCond %{HTTP_HOST} ^domainname.fr
 #    RewriteRule ^(.*)$ http://www.domainname.fr/$1 [R=permanent,L]
@@ -12,10 +13,10 @@ ErrorDocument 404 404.html
     RewriteCond $1 !^(index\.php|assets/)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [QSA,L]
+
  </IfModule>
 
 SetOutputFilter DEFLATE
-AddOutputFilterByType DEFLATE text/css text/plain text/html text/xml application/x-javascript
 
 <IfModule mod_expires.c>
   ExpiresActive on
@@ -41,3 +42,5 @@ AddOutputFilterByType DEFLATE text/css text/plain text/html text/xml application
 
 AddDefaultCharset utf-8
 AddCharset utf-8 .css .js
+
+php_flag display_errors 1
