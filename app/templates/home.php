@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-md-2 col-md-offset-5">
 					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Send gift to...">
+						<input type="text" class="form-control" placeholder="Where to send gift?">
 					</div>
 				</div>
 				<br/>

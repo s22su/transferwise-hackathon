@@ -18,7 +18,6 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<h1 class="page-header">Pay Here
-				<small>Secondary Text</small>
 			</h1>
 		</div>
 	</div>
@@ -66,11 +65,34 @@
 	  <span class="input-group-addon" id="basic-addon5">Phone</span>
 	  <input type="text" class="form-control" placeholder="phone" aria-describedby="basic-addon1" name="phone" value="<?= formValue('phone') ?>">
 	</div>
+	
+	<br/>
+
+	<div class="input-group">
+	  <span class="input-group-addon" id="basic-addon5">Country</span>
+	  <input type="text" class="form-control" placeholder="Country" aria-describedby="basic-addon1" name="country">
+	</div>
+	
+	<br/>
+	
+	<div class="input-group">
+	  <span class="input-group-addon" id="basic-addon5">Bank</span>
+	  <input type="text" class="form-control" placeholder="Bank" aria-describedby="basic-addon1" name="bank">
+	</div>
+	
+	<br/>
+	
+	<div class="input-group">
+	  <span class="input-group-addon" id="basic-addon5">Account Number</span>
+	  <input type="text" class="form-control" placeholder="account number" aria-describedby="basic-addon1" name="account_number">
+	</div>
 
 	<br/>
+	
 	<div class="input-group">
 		<button type="submit" class="btn btn-success btn-lg">Submit</button>
 	</div>
+	
 
 	</form>
 
