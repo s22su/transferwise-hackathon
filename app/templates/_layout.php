@@ -105,15 +105,15 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href=".">Home</a>
                         </li>
                         <li class="footer-menu-divider">⋅</li>
                         <li>
-                            <a href="#sell">Products</a>
+                            <a href=".">Products</a>
                         </li>
                         <li class="footer-menu-divider">⋅</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href=".">Contact</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright © Your Company 2015. All Rights Reserved</p>
