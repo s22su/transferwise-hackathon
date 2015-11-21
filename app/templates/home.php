@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Send gifts to your love ones abroad.</h2>
+                    <h2 class="section-heading">Looking out to make a suprise? A nice gesture? We got you covered.</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -33,28 +33,28 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-hand-pointer-o wow bounceIn text-primary"></i>
                         <h3>Pick an item</h3>
-                        <p class="text-muted"></p>
+                        <p class="text-muted">Choose a gift</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-reorder wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Order</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <p class="text-muted">Provide delivery address.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-money wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Pay</h3>
-                        <p class="text-muted">Payment method built on top of TransferWise. Making conversion rates cheaper.</p>
+                        <p class="text-muted">Save money and pay us in your currency</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Enjoy</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <p class="text-muted">We send the gift to your loved one</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#/basket" class="portfolio-box">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -77,7 +77,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#/basket" class="portfolio-box">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
