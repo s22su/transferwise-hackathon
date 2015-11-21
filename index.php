@@ -107,16 +107,22 @@ $app->get('/other', function () use ($app) {
 
 $app->get('/superadmin', function () use ($app) {
 	$model = new Model();
-	$payments = $model->read('payments');
 	$data = [];
-	$data['payments'] = $payments;
-	$app->render('pay.php', $data);
+
+	if(!isset($_GET['view'])) {
+		$payments = $model->read('payments');
+		$data['payments'] = $payments;
+	}
+	else {
+		$payment = current($model->read('payments', 'id', (int)$_GET['view']));
+		$data['payment'] = $payment;
+	}
+
+	$app->render('admin/payments.php', $data);
 });
 
 $app->post('/pay', function () use ($app) {
 	$error = '';
-	$message = 'Un nouveau message a été posté sur le site ' . SITE_NAME . '.<br /><br />';
-
 	$fields = array(
 		'Link'               => 'link',
 		'Price'              => 'price',

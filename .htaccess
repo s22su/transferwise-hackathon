@@ -5,7 +5,7 @@ ErrorDocument 404 404.html
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
     RewriteEngine on
-	RewriteBase /panda2/transferwise-hackathon/
+	#RewriteBase /panda2/transferwise-hackathon/
 
 #    RewriteCond %{HTTP_HOST} ^domainname.fr
 #    RewriteRule ^(.*)$ http://www.domainname.fr/$1 [R=permanent,L]

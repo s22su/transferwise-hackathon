@@ -1,6 +1,6 @@
 <?php
 
-define('SITE_NAME', 'Slim Boilerplate');
+define('SITE_NAME', 'GIFTIME | Sending an international gift has never been more convenient');
 define('CONTACT_EMAIL', 'contact@deployment.com');
 
 
