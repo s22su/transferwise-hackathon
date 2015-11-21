@@ -49,12 +49,24 @@
                     <td><?= $data['payment']['address']; ?></td>
                 </tr>
                 <tr>
+                    <td><b>Country:</b></td>
+                    <td><?= $data['payment']['country']; ?></td>
+                </tr>
+                <tr>
                     <td><b>Phone:</b></td>
                     <td><?= $data['payment']['phone']; ?></td>
                 </tr>
                 <tr>
-                    <td><b>Price:</b></td>
-                    <td><?= $data['payment']['price']; ?></td>
+                    <td><b>Link:</b></td>
+                    <td><a href="<?= $data['payment']['link']; ?>" target="_blank"><?= $data['payment']['link']; ?></a></td>
+                </tr>
+                <tr>
+                    <td><b>Bank:</b></td>
+                    <td><?= $data['payment']['bank']; ?></td>
+                </tr>
+                <tr>
+                    <td><b>Account number:</b></td>
+                    <td><?= $data['payment']['account_number']; ?></td>
                 </tr>
                 <tr>
                     <td><b>Status:</b></td>

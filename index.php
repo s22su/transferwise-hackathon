@@ -129,6 +129,9 @@ $app->post('/pay', function () use ($app) {
 		'Delivery address'   => 'address',
 		'Name'               => 'name',
 		'Phone'              => 'phone',
+		'Country'            => 'country',
+		'Bank'               => 'bank',
+		'Account number'     => 'account_number',
 	);
 
 	foreach ($fields as $fullName => $name) {
@@ -148,7 +151,10 @@ $app->post('/pay', function () use ($app) {
 			'price' => inputPost('price'),
 			'address' => inputPost('address'),
 			'name' => inputPost('name'),
-			'phone' => inputPost('phone')
+			'phone' => inputPost('phone'),
+			'country'            => inputPost('country'),
+			'bank'               => inputPost('bank'),
+			'account_number'     => inputPost('account_number'),
 		];
 
 		$result = $payments->insert('payments', $values);

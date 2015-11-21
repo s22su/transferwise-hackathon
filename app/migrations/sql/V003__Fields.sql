@@ -1,0 +1,1 @@
+ALTER TABLE `payments` ADD `country` VARCHAR(255) NOT NULL AFTER `phone`, ADD `bank` VARCHAR(255) NOT NULL AFTER `country`, ADD `account_number` VARCHAR(255) NOT NULL AFTER `bank`;
